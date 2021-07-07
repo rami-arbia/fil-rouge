@@ -1,3 +1,8 @@
+CREATE DATABASE village_green; 
+
+USE village_green; 
+
+
 CREATE TABLE SOUSRUBRIQUE(
    sousrub_id INT,
    sousrub_nom VARCHAR(50) NOT NULL,
