@@ -1,3 +1,4 @@
+drop database if exists village_green;
 CREATE DATABASE village_green; 
 
 USE village_green; 
@@ -35,6 +36,7 @@ CREATE TABLE COMMERCIAUX(
 CREATE TABLE FOURNISSEUR(
    fourn_id INT,
    fourn_nom VARCHAR(50) NOT NULL,
+   fourn_prenom VARCHAR(50) NOT NULL,
    fourn_rue VARCHAR(50) NOT NULL,
    fourn_cp INT NOT NULL,
    fourn_ville VARCHAR(50) NOT NULL,
@@ -47,7 +49,6 @@ CREATE TABLE FOURNISSEUR(
 CREATE TABLE RUBRIQUE(
    rub_id INT,
    rub_nom VARCHAR(50) NOT NULL,
-   rub_desc VARCHAR(50) NOT NULL,
    PRIMARY KEY(rub_id)
 );
 

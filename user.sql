@@ -8,7 +8,7 @@ ON PRODUIT
 TO 'visiteur'@'localhost';
 
 GRANT select
-ON village_green
+ON village_green.*
 TO 'client'@'localhost';
 
 GRANT insert, update
@@ -16,9 +16,9 @@ ON COMMANDE, CLIENT
 TO 'client'@'localhost';
 
 GRANT select, insert, update
-ON village_green 
+ON village_green.*
 TO 'gestion'@'localhost';
 
 GRANT select, insert, update, create, delete
-ON village_green
+ON village_green.*
 TO 'admin'@'localhost';
